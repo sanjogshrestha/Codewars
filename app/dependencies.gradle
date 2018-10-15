@@ -1,0 +1,56 @@
+ext {
+    supportVersion = '28.0.0'
+    multidexVersion = '1.0.3'
+
+    support = [
+            design          : "com.android.support:design:$supportVersion",
+            appCompat       : "com.android.support:appcompat-v7:$supportVersion",
+            exifinterface   : "com.android.support:exifinterface:$supportVersion",
+            multidex   : "com.android.support:multidex:$multidexVersion",
+    ]
+
+    disklrucacheVersion = '2.0.2'
+    cache = [
+            disklrucache: "com.jakewharton:disklrucache:$disklrucacheVersion"
+    ]
+
+    databaseVersion = '1.1.1'
+    roomDatabase = [
+            databaseImpl               : "android.arch.persistence.room:runtime:$databaseVersion",
+            databaseAnnotationProcessor: "android.arch.persistence.room:compiler:$databaseVersion",
+            rxjava2Room                : "android.arch.persistence.room:rxjava2:$databaseVersion"
+    ]
+
+    rxjavaVersion = '2.1.12'
+    rxandroidVersion = '2.0.2'
+    rxjava2 = [
+            rxJava    : "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
+            android   : "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
+    ]
+
+    butterKnife = [
+            butterKnife        : "com.jakewharton:butterknife:$butterknifeVersion",
+            butterKnifeCompiler: "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    ]
+
+    gsonVersion = '2.8.2'
+    gson = [
+            gson : "com.google.code.gson:gson:$gsonVersion",
+    ]
+
+    daggerVersion = '2.11'
+    dagger = [
+            android  : "com.google.dagger:dagger-android:$daggerVersion",
+            support  : "com.google.dagger:dagger-android-support:$daggerVersion",
+            processor: "com.google.dagger:dagger-android-processor:$daggerVersion",
+            compiler : "com.google.dagger:dagger-compiler:$daggerVersion"
+    ]
+
+    retrofitVer = "2.3.0"
+    retrofit = [
+            retrofit : "com.squareup.retrofit2:retrofit:$retrofitVer",
+            retrofitConverter : "com.squareup.retrofit2:converter-gson:$retrofitVer",
+            retrofitAdapter : "com.squareup.retrofit2:adapter-rxjava:$retrofitVer",
+            retrofitRxHook  : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVer",
+    ]
+}

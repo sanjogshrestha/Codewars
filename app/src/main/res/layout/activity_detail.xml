@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_medium"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No detail Found"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/authored_challenge_item_view_label_description"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/spacing_medium">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created at : "
+                    android:textSize="@dimen/label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/spacing_x_small"/>
+
+                <TextView
+                    android:id="@+id/createdAtTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/regular"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:text="@string/authored_challenge_item_view_label_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/spacing_x_small"
+                android:paddingEnd="@dimen/spacing_x_small">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created by : "
+                    android:textSize="@dimen/label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/spacing_x_small"/>
+
+                <TextView
+                    android:id="@+id/createdByTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/regular"
+                    tools:text="@string/authored_challenge_item_view_label_name"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/spacing_x_small"
+                android:paddingEnd="@dimen/spacing_x_small">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Authored by : "
+                    android:textSize="@dimen/label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/spacing_x_small"/>
+
+                <TextView
+                    android:id="@+id/authoredByTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/regular"
+                    tools:text="@string/authored_challenge_item_view_label_name"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/spacing_x_small"
+                android:paddingEnd="@dimen/spacing_x_small">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Languages : "
+                    android:textSize="@dimen/label"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/spacing_x_small"/>
+
+                <TextView
+                    android:id="@+id/languageTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/regular"
+                    tools:text="@string/authored_challenge_item_view_label_languages"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
